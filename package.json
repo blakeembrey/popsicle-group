@@ -1,6 +1,6 @@
 {
   "name": "popsicle-group",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Group Popsicle requests and perform operations on them all at once",
   "main": "popsicle-group.js",
   "files": [
