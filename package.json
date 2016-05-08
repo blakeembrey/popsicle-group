@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Group Popsicle requests and perform operations on them all at once",
   "main": "popsicle-group.js",
+  "typings": "popsicle-group.d.ts",
   "files": [
     "popsicle-group.js",
+    "popsicle-group.d.ts",
     "LICENSE"
   ],
   "scripts": {
