@@ -28,10 +28,12 @@ describe('popsicle server', function () {
 
       expect(g.active()).to.equal(0)
 
-      return popsicle(server.url())
+      return popsicle.get(server.url())
         .use(g)
-        .use(function () {
+        .use(function (req, next) {
           expect(g.active()).to.equal(1)
+
+          return next()
         })
         .then(function (res) {
           expect(g.active()).to.equal(0)
@@ -42,7 +44,7 @@ describe('popsicle server', function () {
   describe('abort', function () {
     it('should abort requests (past, present and future)', function () {
       var g = group()
-      var r = popsicle(server.url()).use(g)
+      var r = popsicle.get(server.url()).use(g)
       var errored = 0
 
       g.abort()
@@ -50,13 +52,13 @@ describe('popsicle server', function () {
 
       function abortError (err) {
         errored++
-        expect(err.type).to.equal('EABORT')
+        expect(err.code).to.equal('EABORT')
       }
 
       return r
         .catch(abortError)
         .then(function () {
-          return popsicle(server.url()).use(g)
+          return popsicle.get(server.url()).use(g)
         })
         .catch(abortError)
         .then(function () {

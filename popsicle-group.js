@@ -1,3 +1,5 @@
+var promiseFinally = require('promise-finally').default
+
 /**
  * Exports `popsicleGroup`.
  */
@@ -15,7 +17,7 @@ function popsicleGroup () {
   var requests = {}
   var requestCount = 0
 
-  function group (request) {
+  function group (request, next) {
     var currentId = id++
 
     requestCount++
@@ -26,7 +28,7 @@ function popsicleGroup () {
       request.abort()
     }
 
-    request.always(function () {
+    return promiseFinally(next(), function () {
       requestCount--
       delete requests[currentId]
     })
