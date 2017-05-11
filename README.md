@@ -1,9 +1,10 @@
 # Popsicle Group
 
-[![NPM version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+[![NPM version](https://img.shields.io/npm/v/popsicle-group.svg?style=flat)](https://npmjs.org/package/popsicle-group)
+[![NPM Downloads](https://img.shields.io/npm/dm/popsicle-group.svg?style=flat)](https://npmjs.org/package/popsicle-group)
+[![Build status](https://img.shields.io/travis/blakeembrey/popsicle-group.svg?style=flat)](https://travis-ci.org/blakeembrey/popsicle-group)
+[![Test coverage](https://img.shields.io/coveralls/blakeembrey/popsicle-group.svg?style=flat)](https://coveralls.io/r/blakeembrey/popsicle-group?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/popsicle-group.svg)](https://greenkeeper.io/)
 
 > Group [Popsicle](https://github.com/blakeembrey/popsicle) requests and perform operations on them all at once.
 
@@ -36,12 +37,3 @@ pageGroup.abort() // Aborts all active and future requests.
 ## License
 
 MIT license
-
-[npm-image]: https://img.shields.io/npm/v/popsicle-group.svg?style=flat
-[npm-url]: https://npmjs.org/package/popsicle-group
-[travis-image]: https://img.shields.io/travis/blakeembrey/popsicle-group.svg?style=flat
-[travis-url]: https://travis-ci.org/blakeembrey/popsicle-group
-[coveralls-image]: https://img.shields.io/coveralls/blakeembrey/popsicle-group.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/blakeembrey/popsicle-group?branch=master
-[downloads-image]: https://img.shields.io/npm/dm/popsicle-group.svg?style=flat
-[downloads-url]: https://npmjs.org/package/popsicle-group
