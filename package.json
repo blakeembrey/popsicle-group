@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/blakeembrey/popsicle-group",
   "devDependencies": {
-    "chai": "^3.2.0",
+    "chai": "^4.0.0",
     "es6-promise": "^4.1.0",
     "istanbul": "^0.4.3",
     "mocha": "^3.3.0",
