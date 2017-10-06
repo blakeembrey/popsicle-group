@@ -39,7 +39,7 @@
     "mocha": "^4.0.0",
     "popsicle": "^9.1.0",
     "pre-commit": "^1.0.6",
-    "server-address": "^1.0.1",
+    "server-address": "^2.0.0",
     "standard": "^10.0.2"
   },
   "dependencies": {
